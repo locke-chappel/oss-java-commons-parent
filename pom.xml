@@ -39,14 +39,14 @@
             <dependency>
                 <groupId>com.github.lc.oss.commons</groupId>
                 <artifactId>bom</artifactId>
-                <version>1.0.0</version>
+                <version>${com.github.lc.oss.commons.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             
             <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
+                <groupId>org.apache.httpcomponents.client5</groupId>
+                <artifactId>httpclient5</artifactId>
                 <version>${org.apache.httpcomponents.version}</version>
                 <scope>test</scope>
             </dependency>
