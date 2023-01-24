@@ -3,19 +3,44 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.lc.oss</groupId>
+        <groupId>com.github.locke-chappel.oss</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0</version>
     </parent>
     
-    <groupId>com.github.lc.oss.commons</groupId>
+    <groupId>com.github.locke-chappel.oss.commons</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-
     <name>OSS Commons Parent</name>
+    <description>Commons parent POM for all com.github.locke-chappel.oss.commons projects</description>
     <url>https://github.com/locke-chappel/oss-commons-parent</url>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>locke-chappel</id>
+            <name>Locke-Chappel</name>
+        </developer>
+    </developers>
+  
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/locke-chappel/oss-commons-parent/issues</url>
+    </issueManagement>
+    
+    <scm>
+        <connection>scm:git:git://github.com/locke-chappel/oss-commons-parent.git</connection>
+        <developerConnection>scm:git:ssh://github.com:locke-chappel/oss-commons-parent.git</developerConnection>
+        <url>https://github.com/locke-chappel/oss-commons-parent</url>
+    </scm>
+    
     <build>
         <plugins>
             <plugin>
@@ -37,7 +62,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.github.lc.oss.commons</groupId>
+                <groupId>com.github.locke-chappel.oss.commons</groupId>
                 <artifactId>bom</artifactId>
                 <version>${com.github.lc.oss.commons.bom.version}</version>
                 <type>pom</type>
